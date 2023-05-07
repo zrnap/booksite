@@ -1,0 +1,131 @@
+/* styles.css */
+
+/* Define colors */
+:root {
+    --primary-color: #007bff;
+    --background-color: #f2f2f2;
+    --text-color: #000000;
+}
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+p,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1200px;
+    /* Set the desired maximum width for the page */
+    margin: 0 auto;
+    /* Center the page horizontally */
+}
+
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+header img {
+    max-width: 150px;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-top: 10px;
+    color: var(--text-color);
+    flex-grow: 4;
+}
+
+.map-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.map-container img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.book-item {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: var(--background-color);
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Alternate background color */
+.book-item:nth-child(even) {
+    background-color: var(--background-color);
+}
+
+.book-item:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.book-item img {
+    max-width: 100%;
+    /* margin: 0 10px 0 10px; */
+}
+
+.book-item h2 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: var(--text-color);
+}
+
+.book-item p {
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.book-item a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: var(--background-color);
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
